@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/xxx" target="_blank">
+      <input name="type" type="text" />
+      <hr />
+      <input name="type" type="color" />
+      <hr />
+      <input name="type" type="password" />
+      <hr />
+      同一name下，可以达到只能多选一 <br />
+      <input name="gender" type="radio" />male
+      <input name="gender" type="radio" />female
+      <hr />
+      <input name="hobby" type="checkbox" />唱
+      <input name="hobby" type="checkbox" />跳
+      <input name="hobby" type="checkbox" />rap
+      <input name="hobby" type="checkbox" />篮球
+      <hr />
+      上传文件多个用multiple <br />
+      <input type="file" />
+      <input type="file" multiple />
+      <hr />
+      看不见的input,给js自动填id：<input type="hidden" />
+      <hr />
+      <textarea
+        style="resize: none; width: 50%; height: 300px"
+        name=""
+        id=""
+        cols="60"
+        rows="10"
+      ></textarea>
+      <hr />
+      <select name="Date" id="">
+        <option value="">- select -</option>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+      </select>
+      <!-- 必须有值才可以提交 -->
+      <!-- form 里面的input要有name -->
+      <input name="requiredFill" type="text" required />
+      <button type="submit">submit file</button>
+    </form>
+  </body>
+</html>

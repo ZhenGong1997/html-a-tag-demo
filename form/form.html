@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action="xxx" 控制请求到一个叫做xxx的页面 
+         method 控制使用get还是post去请求 
+         autocomplete name="username" 会给出自动建议 
+         target 哪一个页面刷新，可以使self,blank 或者 指定name的页面-->
+
+    <form action="/xxx" method="POST" autocomplete="on" target="a">
+      <input name="username" type="text" />
+      <!-- <input type="submit" value="gogogo" /> -->
+      <!-- button 与 input区别， button内还可以添加属性，input不可以 -->
+      <!-- form中必须要有一个submit type的input或者button才可以提交 -->
+      <button type="submit">
+        <strong>Let's submit</strong>
+        <img src="cover9.jpg" alt="图片" />
+      </button>
+    </form>
+    <!-- <iframe name="a" src="iframe_top.html" frameborder="0"></iframe> -->
+  </body>
+</html>
